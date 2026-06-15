@@ -83,8 +83,8 @@ Even though only 0.13% of transaactions are marked as fraud.
 But in value terms it comes to 1.05% (8x) of total value.
 
 ### 2. High Risk Transaction Types
-TRANSFER:  0.77% fraud rate → HIGH RISK
-CASH_OUT:  0.18% fraud rate → MEDIUM RISK
-PAYMENT:   0.00% fraud rate → LOW RISK
-DEBIT:     0.00% fraud rate → LOW RISK
-CASH_IN:   0.00% fraud rate → LOW RISK
+- TRANSFER:  0.77% fraud rate → HIGH RISK
+- CASH_OUT:  0.18% fraud rate → MEDIUM RISK
+- PAYMENT:   0.00% fraud rate → LOW RISK
+- DEBIT:     0.00% fraud rate → LOW RISK
+- CASH_IN:   0.00% fraud rate → LOW RISK
