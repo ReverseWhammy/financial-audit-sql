@@ -59,39 +59,6 @@ embedded in an audit team, tasked with:
 
 --- 
 
-## Project Structure
-financial-audit-sql/
-│
-├── Part_1_Data_Exploration/
-│   ├── 1.1_select_basics.sql
-│   ├── 1.2_where_filtering.sql
-│   └── Results/
-│
-├── Part_2_Business_Summary/
-│   ├── 2.1_groupby_aggregations.sql
-│   ├── 2.2_having_filters.sql
-│   └── Results/
-│
-├── Part_3_Risk_Classification/
-│   ├── 3_case_statements.sql
-│   └── Results/
-│
-├── Part_4_Data_Relationships/
-│   ├── 4.1_joins.sql
-│   ├── 4.2_subquery.sql
-│   └── Results/
-│
-├── Part_5_Trend_Analysis/
-│   ├── 5.1_window_ranking.sql
-│   ├── 5.2_running_totals.sql
-│   └── Results/
-│
-├── Part_6_Final_Audit_Report/
-│   ├── 6.1_final_audit_report.sql
-│   └── Results/
-
---- 
-
 ## SQL Concepts Covered
 
 | Concept | Part | Business Application |
@@ -107,5 +74,17 @@ financial-audit-sql/
 | Running Totals, Moving Avg | 5.2 | Trend analysis |
 | Combined Analysis | 6.1 | Final audit report |
 
+---
 
+## Key Findings
 
+### 1. Fraud Concentration
+Even though only 0.13% of transaactions are marked as fraud. 
+But in value terms it comes to 1.05% (8x) of total value.
+
+### 2. High Risk Transaction Types
+TRANSFER:  0.77% fraud rate → HIGH RISK
+CASH_OUT:  0.18% fraud rate → MEDIUM RISK
+PAYMENT:   0.00% fraud rate → LOW RISK
+DEBIT:     0.00% fraud rate → LOW RISK
+CASH_IN:   0.00% fraud rate → LOW RISK
