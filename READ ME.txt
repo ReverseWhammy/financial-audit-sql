@@ -1,0 +1,7 @@
+## Data Quality Findings
+During analysis, significant data quality issues 
+were identified in balance fields. 46% of CASH_OUT 
+and 36% of PAYMENT transactions show zero opening 
+and closing balances, making balance-based 
+reconciliation unreliable. Analysis pivoted to 
+behavioral and pattern-based fraud detection.
