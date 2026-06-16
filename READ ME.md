@@ -98,4 +98,65 @@ Audit recommendation: Focus 80% of resources
 on high value transactions for maximum coverage
 
 ### 4. Transaction Cap Exploitation
+Top CASH_OUT frauds consistently hit 10,000,000 (the system maximum per transaction).
+Which suggests coordinated fraud, maxing transaction limits.
+These accounts were single had transaction and never used again (Hit & Run Pattern).
 
+### 5. U-Shape Fraud Distribution
+Highest fraud rates at value extremes:
+- Decile 1 (highest value): 1.34% fraud rate
+- Decile 10 (lowest value): 0.27% fraud rate
+- Middle deciles: 0.12-0.17% (stable, low risk)
+
+*Interpretation:* Fraudsters operate at both ends, large targets AND small test transactions.
+
+### 6. Data Quality Findings
+Reconciliation break rates:
+- DEBIT:    84.46% fail reconciliation
+- PAYMENT:  63.52% fail reconciliation
+- CASH_OUT: 53.86% fail reconciliation
+- TRANSFER: 46.16% fail reconciliation
+
+*Conclusion:* Balance-based reconciliation unreliable. Fraud detection relies on behavioral patterns
+and isFraud flag rather than balance arithmetic.
+
+### 7. System Lifecycle Fraud Pattern
+- Phase 1 (Steps 1-8):   0.26% fraud rate (highest)
+- Phase 2 (Steps 9-19):  0.03% fraud rate (lowest)
+- Phase 3 (Steps 20-30): 0.11% fraud rate
+
+*Interpretation:* Fraud highest when volume lowest, fraudsters exploiting newly launched
+systems before controls mature
+
+---
+
+## Dataset Limitations
+
+- PaySim is a **synthetic simulation** — not real banking data
+- Opening and Closing Balance fields unreliable — 46-84% reconciliation breaks
+- Customer IDs are near-unique (avg 1.0015 transactions per account), this limits frequency-based fraud detection
+- Time represented as simulation steps, not real dates
+- Phase Analysis
+  - Phase analysis limited to first 30 of 743 steps
+  - Final steps (28-30) show 100% fraud rate but only 4-8 
+    transactions — statistically insignificant
+
+---
+
+## Upcoming
+
+- **Part 7: Power BI Dashboard**
+  - Executive summary page
+  - Fraud analysis page
+  - Trend analysis page
+  - Audit priority accounts page
+
+---
+
+## About
+
+**Neolinn Joy**
+CA Intermediate | Transitioning to Data Analytics
+4+ years audit & Tax experience 
+
+[GitHub](https://github.com/ReverseWhammy)
