@@ -156,7 +156,9 @@ systems before controls mature
 ## About
 
 **Neolinn Joy**
-CA Intermediate | Transitioning to Data Analytics
-4+ years audit & Tax experience 
+
+Data Analyst | CA Intermediate  
+
+Transitioning to Data Analytics 4+ years audit & Tax experience 
 
 [GitHub](https://github.com/ReverseWhammy)
