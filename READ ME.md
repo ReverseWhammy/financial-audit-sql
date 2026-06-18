@@ -73,6 +73,7 @@ embedded in an audit team, tasked with:
 | ROW_NUMBER, RANK, NTILE | 5.1 | Transaction ranking |
 | Running Totals, Moving Avg | 5.2 | Trend analysis |
 | Combined Analysis | 6.1 | Final audit report |
+| Star Schema | 6.2 | Export to PowerBI |
 
 ---
 
@@ -140,6 +141,8 @@ systems before controls mature
   - Phase analysis limited to first 30 of 743 steps
   - Final steps (28-30) show 100% fraud rate but only 4-8 
     transactions — statistically insignificant
+- Since PaySim has a near unique customer ID design, the account dimention table (star schema for PowerBI) is almost
+  as big as the raw transactions data. 
 
 ---
 
