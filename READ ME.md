@@ -55,7 +55,7 @@ embedded in an audit team, tasked with:
 - **Database:** SQLite
 - **IDE:** DBeaver
 - **Version Control:** GitHub
-- **Visualisation:** Power BI (Part 7 — upcoming)
+- **Visualisation:** Power BI 
 
 --- 
 
@@ -144,15 +144,7 @@ systems before controls mature
 - Since PaySim has a near unique customer ID design, the account dimention table (star schema for PowerBI) is almost
   as big as the raw transactions data. 
 
----
 
-## Upcoming
-
-- **Part 7: Power BI Dashboard**
-  - Executive summary page
-  - Fraud analysis page
-  - Trend analysis page
-  - Audit priority accounts page
 
 ---
 
